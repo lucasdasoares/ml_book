@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "An Introduction to Machine Learning"
+  author: "Lucas de Assis Soares"
+  repo-url: https://github.com/lucasdasoares/ml_book
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: "Supervised learning"
+      chapters:
+        - chapter1.md
+        - chapter2.md
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    lightbox: true        # click any image to enlarge it
+    fig-align: center
