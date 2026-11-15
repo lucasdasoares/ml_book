@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Supervised Learning – An Introduction to Machine Learning</title>
+<title>2&nbsp; Supervised Learning – An Introduction to Machine Learning</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -120,7 +120,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Supervised learning</a></li><li class="breadcrumb-item"><a href="./chapter2.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Supervised Learning</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Supervised Learning</span></a></li></ol></nav>
         <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -156,26 +156,26 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Machine Learning</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Supervised Learning</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text" id="quarto-sidebar-section-1-label">Supervised learning</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Linear Regression</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
       <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Machine Learning</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapter2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Supervised Learning</span></span></a>
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Supervised Learning</span></span></a>
   </div>
 </li>
       </ul>
@@ -190,17 +190,17 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#model-evaluation" id="toc-model-evaluation" class="nav-link active" data-scroll-target="#model-evaluation"><span class="header-section-number">3.1</span> Model Evaluation</a></li>
-  <li><a href="#underfitting-and-overfitting" id="toc-underfitting-and-overfitting" class="nav-link" data-scroll-target="#underfitting-and-overfitting"><span class="header-section-number">3.2</span> Underfitting and Overfitting</a></li>
+  <li><a href="#model-evaluation" id="toc-model-evaluation" class="nav-link active" data-scroll-target="#model-evaluation"><span class="header-section-number">2.1</span> Model Evaluation</a></li>
+  <li><a href="#underfitting-and-overfitting" id="toc-underfitting-and-overfitting" class="nav-link" data-scroll-target="#underfitting-and-overfitting"><span class="header-section-number">2.2</span> Underfitting and Overfitting</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lucasdasoares/ml_book/edit/main/chapter2.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lucasdasoares/ml_book/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Supervised learning</a></li><li class="breadcrumb-item"><a href="./chapter2.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Supervised Learning</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Supervised Learning</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Supervised Learning</span></h1>
 </div>
 
 
@@ -244,15 +244,15 @@ J(\boldsymbol{\theta}) = \frac{1}{N} \sum_{n=1}^{N} \left( y_n - f(\mathbf{x}_n,
 \]</span></p>
 <p>If the loss is small after this minimization, we have found model parameters that accurately predict the training outputs <span class="math inline">\(\mathbf{y}_n\)</span> from the training inputs <span class="math inline">\(\mathbf{x}_n\)</span>.</p>
 <p>After training a model, we assess it on data it did not observe during training. We use a <strong>validation set</strong> to compare candidate models and settings and to check for problems such as overfitting, and finally a separate <strong>test set</strong> to obtain an unbiased estimate of how well the chosen model generalizes. If this estimate is adequate, we are ready to deploy the model.</p>
-<section id="model-evaluation" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="model-evaluation"><span class="header-section-number">3.1</span> Model Evaluation</h2>
+<section id="model-evaluation" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="model-evaluation"><span class="header-section-number">2.1</span> Model Evaluation</h2>
 <p>In supervised learning, in both regression and classification problems, each model represents a family of equations mapping inputs to outputs. The particular equation is chosen using the <strong>training dataset</strong>, which are examples of input/output pairs used to choose the best model parameters.</p>
 <p>The process of training a supervised learning model involves using a learning algorithm to adjust the model’s parameters so that its predictions closely match the true outcomes in the training data.</p>
 <p>During development, we evaluate candidate models on a separate <strong>validation dataset</strong> that the model did not see during training. This lets us compare models, tune their settings, and detect underfitting or overfitting. Because these choices are guided by the validation set, its score is no longer an unbiased estimate of real-world performance. For that final estimate we hold out a third <strong>test dataset</strong>, which we touch only once, after all choices have been fixed.</p>
 <p>With this in mind, we split our data into three parts in all applications throughout this course: the <strong>training dataset</strong> for adjusting the model parameters, the <strong>validation dataset</strong> for comparing models and choosing their settings, and the <strong>test dataset</strong> for the final, unbiased evaluation of the chosen model’s performance.</p>
 </section>
-<section id="underfitting-and-overfitting" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="underfitting-and-overfitting"><span class="header-section-number">3.2</span> Underfitting and Overfitting</h2>
+<section id="underfitting-and-overfitting" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="underfitting-and-overfitting"><span class="header-section-number">2.2</span> Underfitting and Overfitting</h2>
 <p>Having trained the model, we want to know whether it has captured the real structure of the data or merely memorized it. We diagnose this by comparing its loss on the training set with its loss on the validation set. The degree to which the prediction accuracy generalizes to the validation data depends in part on how representative and complete the training data is. However, it also depends on how expressive the model is.</p>
 <p>A simple model like a line might not be able to capture the true relationship between input and output. This is known as <strong>underfitting</strong>. It is straightforward to identify an underfit model: it will have a poor performance both on the training dataset and on the validation dataset.</p>
 <p>Conversely, a very expressive model may describe statistical peculiarities of the training data that are atypical and lead to unusual predictions. This is known as <strong>overfitting</strong>. In this case, the model overlearns a dataset, to the extent of learning all the noise and errors in a dataset. Thus, the model fails to perform well for unobserved data.</p>
@@ -763,7 +763,7 @@ J(\boldsymbol{\theta}) = \frac{1}{N} \sum_{n=1}^{N} \left( y_n - f(\mathbf{x}_n,
 <nav class="page-navigation" aria-label="Page">
   <div class="nav-page nav-page-previous">
       <a href="./chapter1.html" class="pagination-link" aria-label="Machine Learning">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Machine Learning</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Machine Learning</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
